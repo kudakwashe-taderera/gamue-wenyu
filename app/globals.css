@@ -4,15 +4,16 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --charcoal: oklch(0.19 0.008 280);
-  --charcoal-light: oklch(0.26 0.008 285);
-  --charcoal-warm: oklch(0.22 0.006 275);
-  --cream: oklch(0.91 0.018 88);
-  --cream-muted: oklch(0.74 0.014 86);
-  --cream-dim: oklch(0.46 0.012 84);
-  --border-subtle: oklch(0.31 0.006 285);
-  --burgundy: oklch(0.42 0.09 18);
-  --burgundy-muted: oklch(0.38 0.07 20);
+  --charcoal: #1b0f14;
+  --charcoal-light: #141a24;
+  --charcoal-warm: #141a24;
+  --cream: #f2eadf;
+  --cream-muted: #b7bcc6;
+  --cream-dim: #8a8f99;
+  --border-subtle: rgba(242, 234, 223, 0.08);
+  --burgundy: #a63a2b;
+  --burgundy-muted: #a63a2b;
+  --accent-secondary: #d47c2c;
 
   --background: var(--charcoal);
   --foreground: var(--cream);
@@ -108,6 +109,7 @@
   --color-border-subtle: var(--border-subtle);
   --color-burgundy: var(--burgundy);
   --color-burgundy-muted: var(--burgundy-muted);
+  --color-accent-secondary: var(--accent-secondary);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
