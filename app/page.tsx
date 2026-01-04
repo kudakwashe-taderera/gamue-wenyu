@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { WorkModal } from "@/components/work-modal"
+import { HeroVideo } from "@/components/hero-video"
 import { featuredWorks } from "@/data/content"
 import type { Metadata } from "next"
 
@@ -16,8 +17,9 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main className="pt-20">
-      <section className="min-h-[75svh] sm:min-h-[85vh] flex items-center justify-center px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 md:space-y-8">
+      <section className="relative min-h-[75svh] sm:min-h-[85vh] flex items-center justify-center px-4 sm:px-6 overflow-hidden">
+        <HeroVideo />
+        <div className="relative z-10 max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 md:space-y-8">
           <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl tracking-tight text-balance">
             GAMUE WENYU
           </h1>

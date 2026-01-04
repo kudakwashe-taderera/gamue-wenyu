@@ -16,8 +16,12 @@ export default function AboutPage() {
         <div className="space-y-6 sm:space-y-8">
           <h1 className="text-4xl sm:text-5xl md:text-7xl tracking-tight">About</h1>
 
-          <div className="aspect-[3/4] md:aspect-[4/3] bg-charcoal-warm border border-border-subtle flex items-center justify-center">
-            <span className="text-7xl sm:text-8xl md:text-9xl opacity-20 font-display" aria-hidden="true">GW</span>
+          <div className="aspect-[3/4] md:aspect-[4/3] bg-charcoal-warm border border-border-subtle overflow-hidden">
+            <img
+              src="/IMG_7956.JPG"
+              alt="Gamue Wenyu"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
