@@ -34,9 +34,17 @@ export default function MusicPage() {
               >
                 <article className="group space-y-3 sm:space-y-4 hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
                   <div className="aspect-square bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors">
-                    <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display group-hover:scale-110 transition-transform duration-500" aria-hidden="true">
-                      {release.id}
-                    </span>
+                    {release.imageUrl ? (
+                      <img
+                        src={release.imageUrl}
+                        alt={release.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display group-hover:scale-110 transition-transform duration-500" aria-hidden="true">
+                        {release.id}
+                      </span>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-lg sm:text-xl tracking-tight">{release.title}</h3>

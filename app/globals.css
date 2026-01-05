@@ -4,15 +4,15 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --charcoal: #1b0f14;
+  --charcoal: #22141a;
   --charcoal-light: #141a24;
   --charcoal-warm: #141a24;
   --cream: #f2eadf;
   --cream-muted: #b7bcc6;
   --cream-dim: #8a8f99;
   --border-subtle: rgba(242, 234, 223, 0.08);
-  --burgundy: #a63a2b;
-  --burgundy-muted: #a63a2b;
+  --burgundy: #c04a3a;
+  --burgundy-muted: #b84232;
   --accent-secondary: #d47c2c;
 
   --background: var(--charcoal);

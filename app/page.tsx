@@ -117,13 +117,21 @@ export default function HomePage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-tight">Featured Work</h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {featuredWorks.map((work) => (
-              <WorkModal key={work.id} work={work}>
+            {featuredWorks.map((work) => {
+              const content = (
                 <div className="group cursor-pointer space-y-2 sm:space-y-3">
                   <div className="aspect-[4/5] bg-charcoal-warm border border-border-subtle overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors">
-                    <div className="w-full h-full flex items-center justify-center text-cream-dim group-hover:scale-105 transition-transform duration-500">
-                      <span className="text-4xl sm:text-5xl md:text-6xl opacity-20 font-display">{work.id}</span>
-                    </div>
+                    {work.imageUrl ? (
+                      <img
+                        src={work.imageUrl}
+                        alt={work.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-cream-dim group-hover:scale-105 transition-transform duration-500">
+                        <span className="text-4xl sm:text-5xl md:text-6xl opacity-20 font-display">{work.id}</span>
+                      </div>
+                    )}
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg sm:text-xl tracking-tight group-hover:text-cream-muted transition-colors">
@@ -134,8 +142,28 @@ export default function HomePage() {
                     </p>
                   </div>
                 </div>
-              </WorkModal>
-            ))}
+              )
+
+              if (work.youtubeUrl) {
+                return (
+                  <a
+                    key={work.id}
+                    href={work.youtubeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {content}
+                  </a>
+                )
+              }
+
+              return (
+                <WorkModal key={work.id} work={work}>
+                  {content}
+                </WorkModal>
+              )
+            })}
           </div>
         </div>
       </section>

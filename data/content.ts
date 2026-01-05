@@ -6,6 +6,8 @@ export const featuredWorks = [
     medium: "Afro-Jazz Single",
     category: "music",
     description: "A sonic exploration of heritage, identity, and memory through Afro-jazz composition.",
+    imageUrl: "/Nyakubereka Cover.png",
+    youtubeUrl: "https://youtu.be/H7XJZ2HQzYc?si=hDuRtldoZPICIODw",
   },
   {
     id: 2,
@@ -87,6 +89,16 @@ export const galleryWorks = [
 
 export const musicReleases = [
   {
+    id: 8,
+    title: "Be with you",
+    year: 2025,
+    type: "Single",
+    description: "Mystery ft Gamue Wenyu",
+    spotifyUrl: "https://open.spotify.com/track/example",
+    youtubeUrl: "https://youtu.be/udQQnyX3fIM?si=xXIBLBHGunUmxUZk",
+    imageUrl: "/Be with you cover.png",
+  },
+  {
     id: 1,
     title: "Nyakubereka Amai",
     year: 2024,
@@ -94,6 +106,7 @@ export const musicReleases = [
     description: "Afro-jazz that explores heritage, identity, and memory. A sonic narrative honoring the past while speaking to the present.",
     spotifyUrl: "https://open.spotify.com/track/example",
     youtubeUrl: "https://youtu.be/H7XJZ2HQzYc?si=hDuRtldoZPICIODw",
+    imageUrl: "/Nyakubereka Cover.png",
   },
   {
     id: 2,
@@ -103,6 +116,7 @@ export const musicReleases = [
     description: "A cover that honors traditional storytelling through contemporary interpretation.",
     spotifyUrl: "https://open.spotify.com/track/example",
     youtubeUrl: "https://youtu.be/6rHAh_ZiTIY?si=dX3CvPHVgr06rmWh",
+    imageUrl: "/Sarungano cover.png",
   },
   {
     id: 3,
@@ -245,6 +259,7 @@ export const featuredAppearances = [
     role: "by Frets",
     description: "",
     youtubeUrl: "https://youtu.be/S6M3YAOzDwM?si=7rIW8XMfKcYxxck-",
+    imageUrl: "/mwene webhawa cover.png",
   },
   {
     id: 4,
