@@ -6,7 +6,7 @@ export const featuredWorks = [
     medium: "Afro-Jazz Single",
     category: "music",
     description: "A sonic exploration of heritage, identity, and memory through Afro-jazz composition.",
-    imageUrl: "/Nyakubereka Cover.png",
+    imageUrl: "/IMG_8021.JPG",
     youtubeUrl: "https://youtu.be/H7XJZ2HQzYc?si=hDuRtldoZPICIODw",
   },
   {
@@ -16,6 +16,7 @@ export const featuredWorks = [
     medium: "Series",
     category: "film",
     description: "A series written and starring Gamue Wenyu, using film as a tool for narrative, performance, and cultural reflection.",
+    imageUrl: "/IMG_8032.JPG",
   },
   {
     id: 3,
@@ -24,6 +25,7 @@ export const featuredWorks = [
     medium: "Afro-Fusion Single",
     category: "music",
     description: "Music that explores love, loss, and empowerment through contemporary Afro-fusion.",
+    imageUrl: "/weminana.PNG",
   },
   {
     id: 4,
@@ -32,6 +34,7 @@ export const featuredWorks = [
     medium: "Performance Art",
     category: "visual",
     description: "Performance art and prosthetic makeup work exploring identity, body, and emotion.",
+    imageUrl: "/IMG_8034.JPG",
   },
   {
     id: 5,
@@ -40,6 +43,8 @@ export const featuredWorks = [
     medium: "Photography Series",
     category: "visual",
     description: "Dramatic photo narratives and conceptual photography that explore transformation and identity.",
+    imageUrl: "/IMG_8033.JPG",
+    imageRotation: "-rotate-90",
   },
   {
     id: 6,
@@ -48,6 +53,7 @@ export const featuredWorks = [
     medium: "Performance Documentation",
     category: "visual",
     description: "Performance art documentation exploring embodiment, expression, and the ways our bodies communicate stories.",
+    imageUrl: "/IMG_8026.JPG",
   },
 ]
 
@@ -106,7 +112,7 @@ export const musicReleases = [
     description: "Afro-jazz that explores heritage, identity, and memory. A sonic narrative honoring the past while speaking to the present.",
     spotifyUrl: "https://open.spotify.com/track/example",
     youtubeUrl: "https://youtu.be/H7XJZ2HQzYc?si=hDuRtldoZPICIODw",
-    imageUrl: "/Nyakubereka Cover.png",
+    imageUrl: "/IMG_8021.JPG",
   },
   {
     id: 2,
@@ -126,6 +132,7 @@ export const musicReleases = [
     description: "A reinterpretation that bridges heritage and modern expression.",
     spotifyUrl: "https://open.spotify.com/track/example",
     youtubeUrl: "https://youtu.be/ip2XU10GBQM?si=5rquOUNNIdVQSLO0",
+    imageUrl: "/mavanga.JPG",
   },
   {
     id: 4,
@@ -135,6 +142,7 @@ export const musicReleases = [
     description: "Gamue Wenyu x Samaz",
     spotifyUrl: "https://open.spotify.com/track/example",
     youtubeUrl: "https://youtu.be/SKYd1KQHzbA?si=vS1tcNOs722Jig17",
+    imageUrl: "/tirambe.JPG",
   },
   {
     id: 5,
@@ -144,6 +152,7 @@ export const musicReleases = [
     description: "A journey through sound exploring identity and path.",
     spotifyUrl: "https://open.spotify.com/track/example",
     youtubeUrl: "https://youtu.be/da3XFwcUJEU?si=sJAISF1Dccgng1Xd",
+    imageUrl: "/nzira.PNG",
   },
   {
     id: 6,
@@ -153,15 +162,17 @@ export const musicReleases = [
     description: "A reflection on presence and absence through music.",
     spotifyUrl: "https://open.spotify.com/track/example",
     youtubeUrl: "https://youtu.be/r4T0TalMbUU?si=wtvlbBFbDAaHVbz3",
+    imageUrl: "/arikupi.PNG",
   },
   {
     id: 7,
-    title: "Gamue Wenyu x Tony",
+    title: "I Do",
     year: 2024,
     type: "Single",
-    description: "A collaborative piece exploring shared musical language.",
+    description: "Tony ft Gamue Wenyu",
     spotifyUrl: "https://open.spotify.com/track/example",
     youtubeUrl: "https://youtu.be/jW9Jt7-O-GY?si=fqUnv601Oa_42rtq",
+    imageUrl: "/tony ft gamu I Do.PNG",
   },
 ]
 
@@ -173,6 +184,7 @@ export const musicVideoFeatures = [
     type: "Music Video",
     description: "Styles Melik",
     youtubeUrl: "https://youtu.be/sPxgdr2BcSY?si=bTX4xnwgJagtGrQ4",
+    imageUrl: "/IMG_8020.JPG",
   },
   {
     id: 2,
@@ -181,6 +193,7 @@ export const musicVideoFeatures = [
     type: "Music Video",
     description: "Styles Melik",
     youtubeUrl: "https://youtu.be/qKPM_DLxl6U?si=y0FZgkfy9dtHcnX7",
+    imageUrl: "/IMG_8020.JPG",
   },
   {
     id: 3,
@@ -189,6 +202,7 @@ export const musicVideoFeatures = [
     type: "Music Video",
     description: "Mwenje Mathole",
     youtubeUrl: "https://youtu.be/vUwarGW_HJs?si=fizAxbJJH6I78v71",
+    imageUrl: "/samora mashero.jpeg",
   },
   {
     id: 4,
@@ -197,6 +211,7 @@ export const musicVideoFeatures = [
     type: "Music Video",
     description: "Mwenje Mathole",
     youtubeUrl: "https://youtu.be/VWGv9rCp-kg?si=f0qlX-Bw8ytYjCgF",
+    imageUrl: "/chimbudzi.JPG",
   },
   {
     id: 5,
@@ -205,6 +220,7 @@ export const musicVideoFeatures = [
     type: "Music Video",
     description: "Frets",
     youtubeUrl: "https://youtu.be/JTHaeAAWVJA?si=_nYD4s56FJU1OF-6",
+    imageUrl: "/messengers.PNG",
   },
   {
     id: 6,
@@ -213,6 +229,7 @@ export const musicVideoFeatures = [
     type: "Music Video",
     description: "Frets",
     youtubeUrl: "https://youtu.be/0K9J-5oFbic?si=RBDNBYVywBZjLQ9F",
+    imageUrl: "/IMG_8034.JPG",
   },
 ]
 
@@ -226,6 +243,7 @@ export const filmProjects = [
     role: "Writer, Star",
     description: "A series written and starring Gamue Wenyu, using film as a tool for narrative, performance, and cultural reflection. Explores identity, belonging, and the complexities of contemporary African experience. Available on YouTube: https://www.youtube.com/@gamue_wenyu",
     youtubeUrl: "https://www.youtube.com/watch?v=h5Dx_RG_6Ng&t=478s",
+    imageUrl: "/IMG_8032.JPG",
   },
 ]
 
@@ -239,6 +257,7 @@ export const featuredAppearances = [
     role: "by Nigel Slick Pastor and Patricia",
     description: "",
     youtubeUrl: "https://youtu.be/RZp9NvyyP4k?si=4aM_wTFbsjAjRkuj",
+    imageUrl: "/twisted.png",
   },
   {
     id: 2,
@@ -249,6 +268,7 @@ export const featuredAppearances = [
     role: "by Frets",
     description: "",
     youtubeUrl: "https://youtu.be/wGRBEi-MLNs?si=_P7EZw_ziR4TKczl",
+    imageUrl: "/zvazvava.png",
   },
   {
     id: 3,
@@ -259,7 +279,7 @@ export const featuredAppearances = [
     role: "by Frets",
     description: "",
     youtubeUrl: "https://youtu.be/S6M3YAOzDwM?si=7rIW8XMfKcYxxck-",
-    imageUrl: "/mwene webhawa cover.png",
+    imageUrl: "/mwenee webhawa.JPG",
   },
   {
     id: 4,
@@ -270,6 +290,7 @@ export const featuredAppearances = [
     role: "by Frets",
     description: "",
     youtubeUrl: "https://youtu.be/klwIpkfA2pg?si=W0YHCXrsdCpw1OPu",
+    imageUrl: "/IMG_8018.JPG",
   },
 ]
 

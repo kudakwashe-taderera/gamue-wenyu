@@ -21,8 +21,12 @@ export default function VisualPage() {
         </div>
 
         <div className="space-y-12 sm:space-y-14 md:space-y-16">
-          <div className="aspect-[16/9] bg-charcoal-warm border border-border-subtle flex items-center justify-center">
-            <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display" aria-hidden="true">01</span>
+          <div className="flex items-center justify-center overflow-hidden">
+            <img
+              src="/IMG_8033.JPG"
+              alt="Between Worlds"
+              className="max-w-full h-auto object-contain -rotate-90"
+            />
           </div>
 
           <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">
@@ -34,11 +38,19 @@ export default function VisualPage() {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
-            <div className="aspect-[3/4] bg-charcoal-warm border border-border-subtle flex items-center justify-center">
-              <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display" aria-hidden="true">02</span>
+            <div className="aspect-[3/4] bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden">
+              <img
+                src="/IMG_8024.JPG"
+                alt="Metamorphosis"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="aspect-[3/4] bg-charcoal-warm border border-border-subtle flex items-center justify-center">
-              <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display" aria-hidden="true">03</span>
+            <div className="aspect-[3/4] bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden">
+              <img
+                src="/IMG_8023.JPG"
+                alt="Metamorphosis"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -50,8 +62,12 @@ export default function VisualPage() {
             </p>
           </div>
 
-          <div className="aspect-[16/9] bg-charcoal-warm border border-border-subtle flex items-center justify-center">
-            <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display" aria-hidden="true">04</span>
+          <div className="flex items-center justify-center overflow-hidden">
+            <img
+              src="/IMG_8034.JPG"
+              alt="Body as Canvas"
+              className="max-w-full h-auto object-contain"
+            />
           </div>
 
           <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">

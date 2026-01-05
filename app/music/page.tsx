@@ -22,7 +22,7 @@ export default function MusicPage() {
         </div>
 
         <section className="space-y-8 sm:space-y-12">
-          <h2 className="text-2xl sm:text-3xl tracking-tight">Featured Releases</h2>
+          <h2 className="text-2xl sm:text-3xl tracking-tight">Releases</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {musicReleases.map((release) => (
               <a
@@ -72,9 +72,17 @@ export default function MusicPage() {
               >
                 <article className="group space-y-3 sm:space-y-4 hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
                   <div className="aspect-square bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors">
-                    <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display group-hover:scale-110 transition-transform duration-500" aria-hidden="true">
-                      {feature.id}
-                    </span>
+                    {feature.imageUrl ? (
+                      <img
+                        src={feature.imageUrl}
+                        alt={feature.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display group-hover:scale-110 transition-transform duration-500" aria-hidden="true">
+                        {feature.id}
+                      </span>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-lg sm:text-xl tracking-tight">{feature.title}</h3>

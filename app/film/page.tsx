@@ -26,16 +26,18 @@ export default function FilmPage() {
             <h2 className="text-2xl sm:text-3xl tracking-tight">Showreel</h2>
             <p className="text-sm text-cream-dim">Selected scenes from Ndada and featured screen work</p>
           </div>
-          <a
-            href="https://www.youtube.com/watch?v=h5Dx_RG_6Ng&t=478s"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
-              <span className="text-4xl sm:text-5xl md:text-6xl opacity-20 font-display" aria-hidden="true">Showreel</span>
-            </div>
-          </a>
+          <div className="aspect-video bg-charcoal-warm border border-border-subtle overflow-hidden hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover"
+            >
+              <source src="/IMG_5407.MP4" type="video/mp4" />
+            </video>
+          </div>
         </section>
 
         <section className="space-y-8 sm:space-y-12 border-t border-border-subtle pt-8 sm:pt-12">
@@ -50,8 +52,16 @@ export default function FilmPage() {
                 className="block"
               >
                 <article className="grid sm:grid-cols-3 gap-6 sm:gap-8 border-l-2 border-border-subtle pl-6 sm:pl-8 hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
-                  <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center">
-                    <span className="text-3xl sm:text-4xl opacity-20 font-display" aria-hidden="true">{project.id}</span>
+                  <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden">
+                    {project.imageUrl ? (
+                      <img
+                        src={project.imageUrl}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <span className="text-3xl sm:text-4xl opacity-20 font-display" aria-hidden="true">{project.id}</span>
+                    )}
                   </div>
                   <div className="sm:col-span-2 space-y-2 sm:space-y-3">
                     <div>
