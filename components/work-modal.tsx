@@ -9,6 +9,8 @@ interface Work {
   year: number
   medium: string
   description: string
+  imageUrl?: string
+  imageRotation?: string
 }
 
 export function WorkModal({ work, children }: { work: Work; children: React.ReactNode }) {
@@ -26,9 +28,19 @@ export function WorkModal({ work, children }: { work: Work; children: React.Reac
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="bg-charcoal border-border-subtle max-w-3xl" aria-labelledby="work-title" aria-describedby="work-description">
           <div className="space-y-5 sm:space-y-6 pt-6 sm:pt-8">
-            <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center">
-              <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display" aria-hidden="true">{work.id}</span>
-            </div>
+            {work.imageUrl ? (
+              <div className="w-full border border-border-subtle overflow-hidden">
+                <img
+                  src={work.imageUrl}
+                  alt={work.title}
+                  className={`w-full h-auto ${work.imageRotation || ""}`}
+                />
+              </div>
+            ) : (
+              <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center">
+                <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display" aria-hidden="true">{work.id}</span>
+              </div>
+            )}
 
             <div className="space-y-3 sm:space-y-4">
               <div>

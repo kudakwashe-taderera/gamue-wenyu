@@ -24,7 +24,6 @@ export default function FilmPage() {
         <section className="space-y-6 sm:space-y-8">
           <div className="space-y-3 sm:space-y-4">
             <h2 className="text-2xl sm:text-3xl tracking-tight">Showreel</h2>
-            <p className="text-sm text-cream-dim">Selected scenes from Ndada and featured screen work</p>
           </div>
           <div className="w-full border border-border-subtle overflow-hidden hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
             <video
@@ -35,7 +34,7 @@ export default function FilmPage() {
               preload="auto"
               className="w-full h-auto"
             >
-              <source src="/IMG_5407.MP4" type="video/mp4" />
+              <source src="/Showreel.mp4" type="video/mp4" />
             </video>
           </div>
         </section>
