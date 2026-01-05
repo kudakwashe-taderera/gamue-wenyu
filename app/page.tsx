@@ -120,19 +120,19 @@ export default function HomePage() {
             {featuredWorks.map((work) => {
               const content = (
                 <div className="group cursor-pointer space-y-2 sm:space-y-3">
-                  <div className={`aspect-[4/5] ${work.title === "Conceptual Narratives" ? "" : "bg-charcoal-warm"} border border-border-subtle overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors`}>
-                    {work.imageUrl ? (
+                  {work.imageUrl ? (
+                    <div className="w-full border border-border-subtle overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors">
                       <img
                         src={work.imageUrl}
                         alt={work.title}
-                        className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${work.imageRotation || ""}`}
+                        className={`w-full h-auto group-hover:opacity-90 transition-opacity duration-500 ${work.imageRotation || ""}`}
                       />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-cream-dim group-hover:scale-105 transition-transform duration-500">
-                        <span className="text-4xl sm:text-5xl md:text-6xl opacity-20 font-display">{work.id}</span>
-                      </div>
-                    )}
-                  </div>
+                    </div>
+                  ) : (
+                    <div className="aspect-[4/5] bg-charcoal-warm border border-border-subtle flex items-center justify-center group-hover:border-[var(--burgundy-muted)] transition-colors">
+                      <span className="text-4xl sm:text-5xl md:text-6xl opacity-20 font-display">{work.id}</span>
+                    </div>
+                  )}
                   <div className="space-y-1">
                     <h3 className="text-lg sm:text-xl tracking-tight group-hover:text-cream-muted transition-colors">
                       {work.title}

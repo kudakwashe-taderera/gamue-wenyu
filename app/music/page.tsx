@@ -33,19 +33,21 @@ export default function MusicPage() {
                 className="block"
               >
                 <article className="group space-y-3 sm:space-y-4 hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
-                  <div className="aspect-square bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors">
-                    {release.imageUrl ? (
+                  {release.imageUrl ? (
+                    <div className="w-full border border-border-subtle overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors">
                       <img
                         src={release.imageUrl}
                         alt={release.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-auto group-hover:opacity-90 transition-opacity duration-500"
                       />
-                    ) : (
+                    </div>
+                  ) : (
+                    <div className="aspect-square bg-charcoal-warm border border-border-subtle flex items-center justify-center group-hover:border-[var(--burgundy-muted)] transition-colors">
                       <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display group-hover:scale-110 transition-transform duration-500" aria-hidden="true">
                         {release.id}
                       </span>
-                    )}
-                  </div>
+                    </div>
+                  )}
                   <div className="space-y-2">
                     <h3 className="text-lg sm:text-xl tracking-tight">{release.title}</h3>
                     <p className="text-sm text-cream-dim">
@@ -71,19 +73,21 @@ export default function MusicPage() {
                 className="block"
               >
                 <article className="group space-y-3 sm:space-y-4 hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
-                  <div className="aspect-square bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors">
-                    {feature.imageUrl ? (
+                  {feature.imageUrl ? (
+                    <div className="w-full border border-border-subtle overflow-hidden group-hover:border-[var(--burgundy-muted)] transition-colors">
                       <img
                         src={feature.imageUrl}
                         alt={feature.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-auto group-hover:opacity-90 transition-opacity duration-500"
                       />
-                    ) : (
+                    </div>
+                  ) : (
+                    <div className="aspect-square bg-charcoal-warm border border-border-subtle flex items-center justify-center group-hover:border-[var(--burgundy-muted)] transition-colors">
                       <span className="text-6xl sm:text-7xl md:text-8xl opacity-20 font-display group-hover:scale-110 transition-transform duration-500" aria-hidden="true">
                         {feature.id}
                       </span>
-                    )}
-                  </div>
+                    </div>
+                  )}
                   <div className="space-y-2">
                     <h3 className="text-lg sm:text-xl tracking-tight">{feature.title}</h3>
                     <p className="text-sm text-cream-dim">

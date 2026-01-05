@@ -26,14 +26,14 @@ export default function FilmPage() {
             <h2 className="text-2xl sm:text-3xl tracking-tight">Showreel</h2>
             <p className="text-sm text-cream-dim">Selected scenes from Ndada and featured screen work</p>
           </div>
-          <div className="aspect-video bg-charcoal-warm border border-border-subtle overflow-hidden hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
+          <div className="w-full border border-border-subtle overflow-hidden hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
             <video
               autoPlay
               loop
               muted
               playsInline
               preload="auto"
-              className="w-full h-full object-cover"
+              className="w-full h-auto"
             >
               <source src="/IMG_5407.MP4" type="video/mp4" />
             </video>
@@ -52,17 +52,19 @@ export default function FilmPage() {
                 className="block"
               >
                 <article className="grid sm:grid-cols-3 gap-6 sm:gap-8 border-l-2 border-border-subtle pl-6 sm:pl-8 hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
-                  <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden">
-                    {project.imageUrl ? (
+                  {project.imageUrl ? (
+                    <div className="w-full border border-border-subtle overflow-hidden">
                       <img
                         src={project.imageUrl}
                         alt={project.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-auto"
                       />
-                    ) : (
+                    </div>
+                  ) : (
+                    <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center">
                       <span className="text-3xl sm:text-4xl opacity-20 font-display" aria-hidden="true">{project.id}</span>
-                    )}
-                  </div>
+                    </div>
+                  )}
                   <div className="sm:col-span-2 space-y-2 sm:space-y-3">
                     <div>
                       <h3 className="text-xl sm:text-2xl tracking-tight mb-1">{project.title}</h3>
@@ -91,17 +93,19 @@ export default function FilmPage() {
                 className="block"
               >
                 <article className="grid sm:grid-cols-3 gap-6 sm:gap-8 border-l-2 border-border-subtle pl-6 sm:pl-8 hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
-                  <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center overflow-hidden">
-                    {appearance.imageUrl ? (
+                  {appearance.imageUrl ? (
+                    <div className="w-full border border-border-subtle overflow-hidden">
                       <img
                         src={appearance.imageUrl}
                         alt={appearance.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-auto"
                       />
-                    ) : (
+                    </div>
+                  ) : (
+                    <div className="aspect-video bg-charcoal-warm border border-border-subtle flex items-center justify-center">
                       <span className="text-3xl sm:text-4xl opacity-20 font-display" aria-hidden="true">{appearance.id}</span>
-                    )}
-                  </div>
+                    </div>
+                  )}
                   <div className="sm:col-span-2 space-y-2 sm:space-y-3">
                     <div>
                       <h3 className="text-xl sm:text-2xl tracking-tight mb-1">{appearance.title}</h3>
