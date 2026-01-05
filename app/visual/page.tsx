@@ -25,7 +25,7 @@ export default function VisualPage() {
             <img
               src="/IMG_8033.JPG"
               alt="Between Worlds"
-              className="max-w-full h-auto object-contain -rotate-90"
+              className="max-w-full h-auto object-contain"
             />
           </div>
 

@@ -44,7 +44,6 @@ export const featuredWorks = [
     category: "visual",
     description: "Dramatic photo narratives and conceptual photography that explore transformation and identity.",
     imageUrl: "/IMG_8033.JPG",
-    imageRotation: "-rotate-90",
   },
   {
     id: 6,
