@@ -1,4 +1,5 @@
 import { filmProjects, featuredAppearances } from "@/data/content"
+import { ShowreelVideo } from "@/components/showreel-video"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -26,16 +27,7 @@ export default function FilmPage() {
             <h2 className="text-2xl sm:text-3xl tracking-tight">Showreel</h2>
           </div>
           <div className="w-full border border-border-subtle overflow-hidden hover:border-[var(--burgundy-muted)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--burgundy)] focus-visible:outline-offset-2">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
-              className="w-full h-auto"
-            >
-              <source src="/Showreel.mp4" type="video/mp4" />
-            </video>
+            <ShowreelVideo />
           </div>
         </section>
 
